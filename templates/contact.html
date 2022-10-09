@@ -6,6 +6,10 @@
 <div class="container-fluid px=0 mb-4">
     <img src="https://source.unsplash.com/1200x400/?phone,contact" class="d-block w-100 mx-0" alt="...">
 </div>
+<div class="user_panel text-center ">
+    <h7>You are logged in Mr/Ms <strong>{{request.user}}</strong> , please click "logout" to log out:</h7>
+    <a href="/logout">logout</a>
+</div>
 <form action="/contact/" method="post">
     {% csrf_token %}
     <div class="container mb-3 py-4">
